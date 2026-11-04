@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohamed Marrouki – Data Scientist & Ingénieur IA</title>
+<meta name="description" content="Data Scientist & Ingénieur IA, double diplôme EURECOM / ESPRIT (major de promotion). ML, Deep Learning, LLMs, Reinforcement Learning et MLOps, de la recherche à la production.">
+<meta property="og:title" content="Mohamed Marrouki – Data Scientist & Ingénieur IA">
+<meta property="og:description" content="ML, LLMs, Reinforcement Learning et MLOps. Projets en production, recherche et enseignement.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0E3A5B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230E3A5B'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23F2A93B' font-family='Arial' font-weight='700'%3EMM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="nav" id="nav">
+  <a class="logo" href="#accueil" aria-label="Accueil">MM</a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  <nav id="menu">
+    <a href="#parcours">Parcours</a>
+    <a href="#experience">Expérience</a>
+    <a href="#projets">Projets</a>
+    <a href="#competences">Compétences</a>
+    <a href="#enseignement">Enseignement</a>
+    <a href="#contact" class="btn small">Me contacter</a>
+  </nav>
+</header>
+
+<main id="contenu">
+<section class="hero" id="accueil">
+  <canvas id="reseau" aria-hidden="true"></canvas>
+  <div class="wrap hero-in">
+    <p class="badge"><span class="dot"></span> Disponible pour un poste de Data Scientist / Ingénieur IA</p>
+    <h1>Mohamed Marrouki</h1>
+    <p class="role">Data Scientist & Ingénieur IA</p>
+    <p class="lead">Je conçois des solutions d'IA qui vont jusqu'en production : modèles de machine learning, LLMs, apprentissage par renforcement et MLOps, avec un objectif simple, un impact mesurable pour le métier.</p>
+    <div class="cta">
+      <a class="btn" href="#projets">Voir mes projets</a>
+      <a class="btn ghost" href="CV_Med_Marrouki_DS_FR.pdf" download>Télécharger mon CV</a>
+    </div>
+    <ul class="chiffres">
+      <li><b data-n="1">0</b><span>major de promotion à ESPRIT, chaque année</span></li>
+      <li><b data-n="2">0</b><span>diplômes : Master EURECOM et Ingénieur ESPRIT</span></li>
+      <li><b data-n="6">0</b><span>expériences en data science et IA</span></li>
+      <li><b data-n="5">0</b><span>langues parlées</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="parcours" class="wrap">
+  <h2>Un parcours d'excellence</h2>
+  <div class="split">
+    <div>
+      <p>Diplômé d'un double cursus en Data Science et Intelligence Artificielle, j'ai travaillé sur des cas réels : réconciliation de transactions aériennes, prévision de trafic télécom, détection d'anomalies industrielles et fine-tuning de LLMs en recherche.</p>
+      <p>Je m'intéresse à tout le cycle de vie d'un modèle : comprendre le besoin, préparer les données, entraîner, expliquer les résultats, puis déployer et surveiller. Je transmets aussi ce savoir : j'ai animé trois formations en 2026.</p>
+    </div>
+    <div class="palmares">
+      <div class="trophee">
+        <span class="medaille" aria-hidden="true">★</span>
+        <div><h3>Major de promotion</h3><p>Premier de ma promotion chaque année du cycle ingénieur à ESPRIT (Tunis), de 2020 à 2025.</p></div>
+      </div>
+      <div class="edu">
+        <h3>Master en Data Science</h3><p>EURECOM, Biot · 09/2024 – 01/2026</p>
+      </div>
+      <div class="edu">
+        <h3>Diplôme d'Ingénieur en Informatique</h3><p>ESPRIT, Tunis · 09/2020 – 11/2025</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="wrap">
+  <h2>Expérience professionnelle</h2>
+  <ol class="timeline">
+    <li>
+      <time>07/2025 – 12/2025</time>
+      <h3>Data Scientist · MNC AERO <small>Valbonne</small></h3>
+      <dl class="detail">
+        <dt>Contexte</dt><dd>Le projet portait sur environ 100 000 transactions aériennes par mois. Il fallait associer chaque vente à son règlement, ce qui demandait beaucoup de travail manuel.</dd>
+        <dt>Ce que j'ai fait</dt><dd><ul><li>J'ai conçu un système qui combine machine learning et LLM pour faire ce rapprochement automatiquement.</li><li>J'ai créé des modèles de regroupement (K-Means, DBSCAN, HDBSCAN) et des modèles supervisés, dont des réseaux siamois qui mesurent la ressemblance entre deux transactions, pour repérer les anomalies dans les données de production.</li><li>J'ai extrait des règles métier faciles à lire avec SkopeRules, pour que les équipes comprennent les décisions du modèle.</li><li>J'ai ajouté des explications en langage naturel générées par un LLM, qui donnent le contexte de chaque cas.</li><li>J'ai travaillé avec les équipes data et métier, documenté la solution et présenté les résultats pour faciliter son adoption.</li></ul></dd>
+        <dt>Résultats</dt><dd><b>+4 %</b> de précision de matching et <b>−60 %</b> d'effort manuel.</dd>
+      </dl>
+      <p class="tags"><span>Python</span><span>LLMs</span><span>K-Means</span><span>DBSCAN</span><span>HDBSCAN</span><span>Réseaux siamois</span><span>SkopeRules</span><span>IA explicable</span></p><p class="note">Données propriétaires : projet non publiable.</p>
+    </li>
+    <li>
+      <time>01/2025 – 06/2025</time>
+      <h3>Ingénieur IA · EURECOM <small>Biot</small></h3>
+      <dl class="detail">
+        <dt>Contexte</dt><dd>Projet de recherche pour améliorer le raisonnement des grands modèles de langage (LLMs) grâce à l'apprentissage par renforcement.</dd>
+        <dt>Ce que j'ai fait</dt><dd><ul><li>J'ai conçu un cadre de fine-tuning qui optimise des dialogues entiers, et non des réponses isolées.</li><li>J'ai mis en place le pipeline de reinforcement learning : GRPO, GAE et récompenses basées sur les trajectoires Q(s,a).</li><li>J'ai optimisé l'entraînement sur 4 GPU avec LoRA, DeepSpeed et ZeRO.</li><li>J'ai travaillé dans une équipe de recherche, rédigé un article scientifique et présenté les résultats de façon structurée et reproductible.</li></ul></dd>
+        <dt>Résultats</dt><dd><b>−40 %</b> de temps d'entraînement et un article de recherche rédigé.</dd>
+      </dl>
+      <p class="tags"><span>GRPO</span><span>GAE</span><span>LoRA</span><span>DeepSpeed</span><span>ZeRO</span><span>Multi-GPU</span></p><p class="note">Projet confidentiel : seules les grandes lignes sont partagées.</p>
+    </li>
+    <li>
+      <time>06/2024 – 08/2024</time>
+      <h3>Data Scientist · Orange <small>Tunis</small></h3>
+      <dl class="detail">
+        <dt>Contexte</dt><dd>Prévoir la consommation de données mobiles pour aider l'équipe marketing à décider.</dd>
+        <dt>Ce que j'ai fait</dt><dd><ul><li>J'ai développé une application web de prévision à partir de séries temporelles, avec des modèles RNN, LSTM et GRU.</li><li>J'ai traité des données télécom à grande échelle et optimisé les hyperparamètres du modèle.</li><li>J'ai déployé la solution avec Streamlit et MLflow (MLOps).</li></ul></dd>
+        <dt>Résultats</dt><dd><b>88 %</b> de précision sur 96 mois de données. Mes analyses ont été adoptées par l'équipe marketing.</dd>
+      </dl>
+      <p class="tags"><span>RNN</span><span>LSTM</span><span>GRU</span><span>Streamlit</span><span>MLflow</span></p><p class="note">Données et implémentation confidentielles.</p>
+    </li>
+    <li>
+      <time>01/2024 – 04/2024</time>
+      <h3>Data Scientist · PGS International <small>Tunis</small></h3>
+      <dl class="detail">
+        <dt>Contexte</dt><dd>Production pétrolière : prévoir la production et détecter les dysfonctionnements de citernes de grande capacité pour réduire les pertes.</dd>
+        <dt>Ce que j'ai fait</dt><dd><ul><li>J'ai analysé et préparé les données de production.</li><li>J'ai construit des modèles de prévision (LSTM, GRU, SARIMA) pour estimer la production mensuelle.</li><li>J'ai développé un outil d'IA qui détecte les dysfonctionnements des citernes et génère automatiquement un rapport des anomalies.</li><li>J'ai créé une application full-stack (Spring Boot, Angular) avec des tableaux de bord Power BI pour le suivi.</li></ul></dd>
+        <dt>Résultats</dt><dd><b>97 %</b> de précision sur la prévision, <b>99 %</b> sur la détection d'anomalies, et moins de pertes de pétrole.</dd>
+      </dl>
+      <p class="tags"><span>LSTM</span><span>GRU</span><span>SARIMA</span><span>Spring Boot</span><span>Angular</span><span>Power BI</span></p>
+    </li>
+    <li>
+      <time>09/2023 – 12/2023</time>
+      <h3>Data Scientist · ESPRIT <small>Tunis</small></h3>
+      <dl class="detail">
+        <dt>Contexte</dt><dd>Vision par ordinateur : la segmentation d'instances consiste à reconnaître et délimiter chaque objet dans une image.</dd>
+        <dt>Ce que j'ai fait</dt><dd><ul><li>J'ai développé et affiné (fine-tuning) des modèles Mask R-CNN avec TensorFlow et Keras, optimisés avec SGD et Adam.</li><li>J'ai amélioré les performances par l'optimisation et l'augmentation de données.</li><li>J'ai documenté mes expériences et travaillé en équipe projet.</li></ul></dd>
+        <dt>Résultats</dt><dd>Des performances de segmentation améliorées, grâce à des expériences documentées et reproductibles.</dd>
+      </dl>
+      <p class="tags"><span>Mask R-CNN</span><span>TensorFlow</span><span>Keras</span><span>Augmentation de données</span></p>
+    </li>
+    <li>
+      <time>Tunisie Telecom</time>
+      <h3>Data Analyst · Tunisie Telecom <small></small></h3>
+      <dl class="detail">
+        <dt>Contexte</dt><dd>Analyse du trafic télécom et aide à la décision opérationnelle.</dd>
+        <dt>Ce que j'ai fait</dt><dd><ul><li>J'ai développé des solutions d'analyse et des tableaux de bord avec Python, SQL, Django et Power BI.</li></ul></dd>
+        <dt>Résultats</dt><dd>Des tableaux de bord qui soutiennent les décisions des équipes opérationnelles.</dd>
+      </dl>
+      <p class="tags"><span>Python</span><span>SQL</span><span>Django</span><span>Power BI</span></p>
+    </li>
+  </ol>
+</section>
+
+<section id="projets" class="wrap">
+  <h2>Projets</h2>
+  <p class="intro">Mon code public sur GitHub : un GPT écrit à la main, de la recherche reproduite, des exercices d'algorithmique et des compétitions Kaggle.</p>
+  <div class="grille">
+    <article class="carte vedette">
+      <h3>GPT construit de zéro</h3>
+      <p>Un GPT complet assemblé à partir de ma progression sur le cours ML de NeetCode : des bases mathématiques jusqu'à la génération de texte. Tout le code a été écrit et soumis par moi.</p><ul><li>Réseaux de neurones from scratch : neurone, rétropropagation, MLP, fonctions d'activation, fonctions de perte</li><li>Pipeline de données : tokenizer BPE, vocabulaire, chargeur de données par lots, prétraitement NLP</li><li>Architecture : self-attention, attention multi-têtes, grouped-query attention, KV-cache, Transformer, normalisations (Layer, Batch, RMS), embeddings et encodage positionnel</li><li>Boucle d'entraînement (<code>train.py</code>) et génération de texte (<code>generate.py</code>)</li></ul>
+      <p class="tags"><span>Python</span><span>PyTorch</span><span>Transformers</span><span>NLP</span></p>
+      <a class="lien" href="https://github.com/MohamedMarrouki/neetcode-gpt" target="_blank" rel="noopener">Voir le code sur GitHub</a>
+    </article>
+    <article class="carte">
+      <h3>Classification bayésienne par processus gaussiens</h3>
+      <p>Reproduction et extension de l'article de Williams et Barber (1998, IEEE TPAMI), sur deux jeux de données : Crabs (200 crabes) et Pima Indians Diabetes (768 patients).</p><ul><li>Approximation de Laplace et optimisation de Newton codées à la main pour comprendre le calcul</li><li>Comparaison de GPy, GPflow et d'une SVM ; test des noyaux RBF et Matérn et de l'effet du scaling</li><li>Constat : la SVM est plus rapide et plus précise, mais elle ne donne pas d'estimation d'incertitude</li></ul>
+      <p class="tags"><span>Processus gaussiens</span><span>GPy</span><span>GPflow</span><span>SVM</span></p>
+      <a class="lien" href="https://github.com/MohamedMarrouki/Bayesian-classification-with-Gaussian-processes" target="_blank" rel="noopener">Voir le code sur GitHub</a>
+    </article>
+    <article class="carte">
+      <h3>Challenges de code NeetCode</h3>
+      <p>Mes solutions aux exercices d'algorithmique de NeetCode.io (structures de données et algorithmes), synchronisées automatiquement depuis la plateforme à chaque soumission.</p>
+      <p class="tags"><span>Algorithmes</span><span>Structures de données</span><span>NeetCode</span></p>
+      <a class="lien" href="https://github.com/MohamedMarrouki/neetcode-submissions" target="_blank" rel="noopener">Voir le code sur GitHub</a>
+    </article>
+    <article class="carte">
+      <h3>Reroutage et portabilité (Tunisie Telecom)</h3>
+      <p>Projet Python autour du reroutage lié à la portabilité des numéros, réalisé dans le contexte de Tunisie Telecom.</p>
+      <p class="tags"><span>Python</span><span>Télécom</span></p>
+      <a class="lien" href="https://github.com/MohamedMarrouki/Reroutage-portabilite-TT" target="_blank" rel="noopener">Voir le code sur GitHub</a>
+    </article>
+  </div>
+  <h3 class="sous">Compétitions Kaggle</h3>
+  <div class="grille">
+    <article class="carte">
+      <h3>Stratégie de pit stop en Formule 1</h3>
+      <p>Prédire la probabilité qu'un pilote s'arrête au prochain tour, à partir de l'usure des pneus, de la progression de course et des positions.</p><ul><li>Variables créées : dégradation cumulée, écart de temps au tour, progression de course, changement de position</li><li>Modèles testés : régression logistique, Random Forest, LightGBM, CatBoost, XGBoost (le meilleur) ; hyperparamètres optimisés avec Optuna</li><li><b>ROC-AUC en validation : 0,943</b></li></ul>
+      <p class="tags"><span>XGBoost</span><span>Optuna</span><span>Scikit-Learn</span></p>
+      <a class="lien" href="https://github.com/MohamedMarrouki/F1_pitstop_Project_Kaggle" target="_blank" rel="noopener">Voir le code sur GitHub</a>
+    </article>
+    <article class="carte">
+      <h3>House Prices : régression avancée</h3>
+      <p>Prédire le prix de vente de maisons à partir de 79 variables : analyse exploratoire, transformation logarithmique des variables asymétriques, variables d'âge, de surface totale et de salles de bain.</p><ul><li>Modèles testés : régressions linéaire, Ridge, Lasso, Random Forest, Gradient Boosting et XGBoost (le meilleur) avec validation croisée</li></ul>
+      <p class="tags"><span>XGBoost</span><span>Régression</span><span>Feature engineering</span></p>
+      <a class="lien" href="https://github.com/MohamedMarrouki/House_Pricing_Project_Kaggle" target="_blank" rel="noopener">Voir le code sur GitHub</a>
+    </article>
+    <article class="carte">
+      <h3>Spaceship Titanic</h3>
+      <p>Prédire quels passagers ont été « transportés » vers une autre dimension. Le feature engineering a été le levier principal : dépenses totales, découpage de la cabine (pont, numéro, côté).</p><ul><li>Valeurs manquantes traitées par médiane ou mode ; XGBoost avec validation croisée</li><li><b>Score public Kaggle : 0,80313</b></li></ul>
+      <p class="tags"><span>XGBoost</span><span>Feature engineering</span></p>
+      <a class="lien" href="https://github.com/MohamedMarrouki/Titanic_Spaceship_Project_Kaggle" target="_blank" rel="noopener">Voir le code sur GitHub</a>
+    </article>
+    <article class="carte">
+      <h3>Titanic : Machine Learning from Disaster</h3>
+      <p>Prédire la survie des passagers : titres extraits des noms, taille de la famille, encodage des variables catégorielles.</p><ul><li>Modèles testés : régression logistique, Random Forest, Gradient Boosting ; XGBoost retenu</li><li><b>Score public Kaggle : 0,77272</b></li></ul>
+      <p class="tags"><span>XGBoost</span><span>EDA</span><span>Scikit-Learn</span></p>
+      <a class="lien" href="https://github.com/MohamedMarrouki/Titanic_Project_Kaggle" target="_blank" rel="noopener">Voir le code sur GitHub</a>
+    </article>
+  </div>
+</section>
+
+<section id="competences" class="wrap">
+  <h2>Compétences</h2>
+  <div class="comp">
+    <div><h3>IA & Machine Learning</h3><p class="tags"><span>Python</span><span>Scikit-Learn</span><span>XGBoost</span><span>LightGBM</span><span>CatBoost</span><span>TensorFlow</span><span>PyTorch</span><span>Deep Learning</span><span>NLP</span></p></div>
+    <div><h3>LLMs & Reinforcement Learning</h3><p class="tags"><span>Fine-tuning (LoRA, PEFT)</span><span>GRPO</span><span>GAE</span><span>MCTS</span><span>Hugging Face</span><span>RAG</span><span>Ollama</span></p></div>
+    <div><h3>Data Engineering & MLOps</h3><p class="tags"><span>SQL / NoSQL</span><span>PySpark</span><span>Hadoop</span><span>Databricks</span><span>ETL / ELT</span><span>MLflow</span><span>Docker</span><span>Kubernetes</span><span>CI/CD</span><span>Jenkins</span><span>DataOps</span></p></div>
+    <div><h3>Cloud & BI</h3><p class="tags"><span>AWS</span><span>Azure</span><span>GCP</span><span>Power BI</span><span>Tableau</span><span>R</span><span>ElasticSearch</span><span>MongoDB</span></p></div>
+    <div><h3>Autres langages & méthodes</h3><p class="tags"><span>Java</span><span>C / C++</span><span>C#</span><span>Shell Unix</span><span>Git</span><span>Scrum</span><span>Gestion de projet</span></p></div>
+    <div><h3>Langues</h3><p class="tags"><span>Français C2</span><span>Anglais C1</span><span>Espagnol B1</span><span>Allemand A1</span><span>Italien A1</span></p></div>
+  </div>
+</section>
+
+<section id="enseignement" class="wrap">
+  <h2>Enseignement & engagement</h2>
+  <div class="grille trois">
+    <article class="carte"><time>04/2026</time><h3>Formateur Deep Learning · CYMA, Nice</h3><p>Formation complète, de la préparation des données à l'évaluation des modèles, avec les bonnes pratiques de déploiement : A/B testing, CI/CD, monitoring en production.</p></article>
+    <article class="carte"><time>03/2026</time><h3>Formateur Tableau · CYMA, Nice</h3><p>Création de tableaux de bord interactifs, de la connexion aux données à la visualisation, avec les principes du data storytelling.</p></article>
+    <article class="carte"><time>02/2026</time><h3>Formateur ML & Statistiques · CYMA, Nice</h3><p>Statistiques clés pour le ML (variance, distributions, tests d'hypothèses) appliquées au feature engineering et à l'évaluation de modèles.</p></article>
+  </div>
+  <div class="split bas">
+    <div><h3>Certifications</h3>
+      <ul class="liste"><li>Transformer-Based NLP · NVIDIA</li><li>Intermediate Machine Learning · Kaggle</li><li>AI Agent & GenAI · Databricks</li><li>NLP with Classification and Vector Spaces · DeepLearning.AI</li><li>Introduction to Microsoft Azure Cloud Services · Microsoft</li></ul></div>
+    <div><h3>Bénévolat</h3>
+      <ul class="liste"><li>Croix-Rouge française</li><li>IRSET (Institut Tunisien de RSE)</li><li>UN Global Compact Network Tunisia</li></ul></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Travaillons ensemble</h2>
+    <p class="lead">Je cherche un poste de Data Scientist ou d'Ingénieur IA, basé dans le sud de la France (Antibes) ou à distance. Écris-moi, je réponds vite.</p>
+    <div class="cta">
+      <a class="btn" href="mailto:mmarrouki52@gmail.com">mmarrouki52@gmail.com</a>
+      <a class="btn ghost" href="tel:+33759583688">+33 7 59 58 36 88</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/mohamed-marrouki" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/MohamedMarrouki" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><p>© 2026 Mohamed Marrouki · Antibes, France · <a href="tel:+33759583688">+33 7 59 58 36 88</a></p></footer>
+<script src="script.js"></script>
+</body>
+</html>
