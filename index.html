@@ -47,4 +47,58 @@
   </main>
   <footer class="footer"><div class="container footer-inner"><span>© <span id="year">2026</span> Mohamed Marrouki</span><span>Conçu simplement, pour aller à l’essentiel.</span><a href="#accueil">Retour en haut ↑</a></div></footer>
 </body>
+  
+<script>
+(function () {
+  const ACCESS_KEY = "8528630e-5187-4a97-9ebd-796646a9a4e9";
+
+  // Limiter les notifications répétées
+  const STORAGE_KEY = "portfolio_visit_notified";
+  const DELAY = 24 * 60 * 60 * 1000;
+
+  const lastVisit = Number(
+    localStorage.getItem(STORAGE_KEY) || 0
+  );
+
+  if (Date.now() - lastVisit < DELAY) {
+    return;
+  }
+
+  async function notifyVisit() {
+    try {
+      const response = await fetch(
+        "https://api.web3forms.com/submit",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            access_key: ACCESS_KEY,
+            subject: "Nouvelle visite de mon portfolio",
+            from_name: "Portfolio CV",
+            message:
+              "Une personne a ouvert mon portfolio.\n" +
+              "Date : " + new Date().toLocaleString("fr-FR") +
+              "\nPage : " + window.location.href
+          })
+        }
+      );
+
+      const result = await response.json();
+
+      if (result.success) {
+        localStorage.setItem(
+          STORAGE_KEY,
+          String(Date.now())
+        );
+      }
+    } catch (error) {
+      console.log("Notification non envoyée");
+    }
+  }
+
+  notifyVisit();
+})();
+</script>
 </html>
